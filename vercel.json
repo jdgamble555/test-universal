@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "public": true,
+  "rewrites": [
+    {
+      "source": "/(.*[.].+)",
+      "destination": "dist/test/browser/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "dist/test/server/main.js"
+    }
+  ]
+}
