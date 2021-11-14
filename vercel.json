@@ -1,14 +1,6 @@
 {
   "version": 2,
   "public": true,
-  "rewrites": [
-    {
-      "source": "/(.*[.].+)",
-      "destination": "dist/test/browser/$1"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "dist/test/server/main.js"
-    }
-  ]
+  "name": "test-universal",
+  "builds": [{ "src": "dist/test/server/main.js", "use": "@vercel/node" }]
 }
