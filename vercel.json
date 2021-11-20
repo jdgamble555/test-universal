@@ -3,10 +3,11 @@
   "public": true,
   "name": "test-universal",
   "builds": [
-    { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "dist" } },
     { "src": "dist/test/server/main.js", "use": "@vercel/node" }
   ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "dist/test/server.main.js"}
+  "routes": [
+    {  "src": "/api/(.*)", "dest": "dist/test/server.main.js" },
+    { "src": "/api", "dest": "dist/test/server.main.js" },
+    { "src": "/(.*)", "dest": "$1" }
   ]
 }
