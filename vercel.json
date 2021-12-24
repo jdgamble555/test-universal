@@ -5,6 +5,6 @@
   "builds": [
     { "src": "dist/test/server/main.js", "use": "@now/node" }],
   "routes": [
-    { "src": "/(.*)", "dest": "dist/test/server.main.js" }
+    { "src": "/(.*)", "dest": "dist/test/server/main.js" }
   ]
 }
