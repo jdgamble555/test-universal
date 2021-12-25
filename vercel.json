@@ -3,7 +3,7 @@
   "public": true,
   "name": "test-universal",
   "builds": [
-    { "src": "package.json", "use": "@vercel/next" },
+    { "src": "package.json", "use": "@vercel/static-build" },
     { "src": "./dist/app/server/main.js", "use": "@vercel/node" }
   ],
   "routes": [{ "src": "/(.*)", "dest": "dist/test/server/main.js" }]
