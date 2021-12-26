@@ -2,8 +2,5 @@
   "version": 2,
   "public": true,
   "name": "test-universal",
-  "builds": [
-    { "src": "package.json", "use": "@vercel/static-build" }
-  ],
   "routes": [{ "src": "/(.*)", "dest": "./dist/test/server/main.js" }]
 }
