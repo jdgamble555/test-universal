@@ -2,5 +2,5 @@
   "version": 2,
   "public": true,
   "name": "test-universal",
-  "routes": [{ "src": "/(.*)", "dest": "./dist/test/server/main.js" }]
+  "routes": [{ "src": "/(.*)", "dest": "../dist/test/server/main.js" }]
 }
