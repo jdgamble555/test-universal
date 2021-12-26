@@ -2,5 +2,5 @@
   "version": 2,
   "public": true,
   "name": "test-universal",
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
 }
