@@ -2,5 +2,9 @@
   "version": 2,
   "public": true,
   "name": "test-universal",
-  "builds": [{ "src": "./dist/test/server/main.js", "use": "@now/node-server" }]
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build" },
+    { "src": "./dist/test/server/main.js", "use": "@now/node-server" }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "./dist/test/server/main.js" }]
 }
