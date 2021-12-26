@@ -2,12 +2,9 @@
   "version": 2,
   "public": true,
   "name": "test-universal",
-  "builds": [
-    { "src": "package.json", "use": "@vercel/static-build" },
-    { "src": "./dist/test/browser", "use": "@vercel/static" },
-    { "src": "./api", "use": "@vercel/node" }
-  ],
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api" }
-  ]
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 30
+    }
+  }
 }
