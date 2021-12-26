@@ -2,15 +2,10 @@
   "version": 2,
   "public": true,
   "name": "test-universal",
-  "builds": [
-    { "src": "package.json", "use": "@vercel/static-build" },
-    { "src": "./api/server/main.js", "use": "@vercel/node" }
-  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "./api/server/main.js"
+      "dest": "./api/main.js"
     }
   ]
 }
- 
