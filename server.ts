@@ -31,6 +31,8 @@ function app(): express.Express {
 
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
     res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
   });
 
