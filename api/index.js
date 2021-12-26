@@ -1,3 +1,3 @@
-const app = require('./server/main');
+import { app } from "./server/main";
 
-export default app;
+export { app };
