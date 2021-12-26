@@ -3,7 +3,7 @@
   "public": true,
   "name": "test-universal",
   "functions": {
-    "./dist/test/server/main.js": {
+    "../dist/test/server/main.js": {
       "includeFiles": ".dist/browser/.*"
     }
   }
