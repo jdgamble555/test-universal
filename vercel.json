@@ -2,10 +2,5 @@
   "version": 2,
   "public": true,
   "name": "test-universal",
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/api/server/main.js"
-    }
-  ]
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
 }
