@@ -1,1 +1,1 @@
-export * from '../dist/test/server/main';
+export { app } from "../dist/test/server/main";
