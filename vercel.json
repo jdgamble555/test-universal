@@ -3,7 +3,7 @@
   "public": true,
   "name": "test-universal",
   "builds": [
-    { "src": "./api/server/main.js", "use": "@vercel/node" }
+    { "src": "./server/main.js", "use": "@vercel/node" }
   ],
   "routes": [
     {
