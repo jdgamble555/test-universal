@@ -2,6 +2,9 @@
   "version": 2,
   "public": true,
   "name": "test-universal",
+  "builds": [
+    { "src": "./api/server/main.js", "use": "@vercel/node" }
+  ],
   "routes": [
     {
       "src": "/(.*)",
