@@ -3,6 +3,6 @@
   "public": true,
   "name": "test-universal",
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api" }
+    { "source": "./(.*)", "destination": "./api" }
   ]
 }
