@@ -1,4 +1,4 @@
-const app = require('express')();
+/*const app = require('express')();
 const { v4 } = require('uuid');
 
 app.get('/', (req, res) => {
@@ -13,4 +13,7 @@ app.get('/item/:slug', (req, res) => {
   res.end(`Item: ${slug}`);
 });
 
+module.exports = app;*/
+
+const app = require('../dist/test/server/main');
 module.exports = app;
