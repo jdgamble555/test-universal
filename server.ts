@@ -9,7 +9,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 
 // The Express app is exported so that it can be used by serverless Functions.
-export function app(): express.Express {
+function app(): express.Express {
   const server = express();
   const distFolder = join(process.cwd(), 'api/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
@@ -37,6 +37,8 @@ export function app(): express.Express {
   return server;
 }
 
+module.exports = app;
+
 function run(): void {
   const port = process.env['PORT'] || 4000;
 
@@ -57,4 +59,4 @@ if (moduleFilename === __filename || moduleFilename.includes('iisnode')) {
   run();
 }
 
-export * from './src/main.server';
+//export * from './src/main.server';
