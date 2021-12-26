@@ -4,12 +4,12 @@
   "name": "test-universal",
   "builds": [
     { "src": "package.json", "use": "@vercel/static-build" },
-    { "src": "./api/index.js", "use": "@vercel/node" }
+    { "src": "./api/server/main.js", "use": "@vercel/node" }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/index.js"
+      "dest": "/api/server/main.js"
     }
   ]
 }
