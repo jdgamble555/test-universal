@@ -15,5 +15,5 @@ app.get('/item/:slug', (req, res) => {
 
 module.exports = app;*/
 
-const app = require('../dist/test/server/main');
+const app = require('./server/main');
 module.exports = app;
