@@ -2,9 +2,8 @@
   "version": 2,
   "public": true,
   "name": "test-universal",
-  "functions": {
-    "api/": {
-      "maxDuration": 30
-    }
-  }
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build" },
+    { "src": "./api/index.js", "use": "@vercel/node" }
+  ]
 }
