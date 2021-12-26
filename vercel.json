@@ -3,7 +3,7 @@
   "public": true,
   "name": "test-universal",
   "functions": {
-    "api/index.js": {
+    "api/": {
       "maxDuration": 30
     }
   }
