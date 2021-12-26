@@ -39,7 +39,7 @@ server.get('*', (req, res) => {
 //return server;
 //}
 
-module.exports = server;
+export default server;
 
 /*function run(): void {
   const port = process.env['PORT'] || 4000;
