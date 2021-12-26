@@ -2,9 +2,9 @@
   "version": 2,
   "public": true,
   "name": "test-universal",
-  "builds": [
-    { "src": "package.json", "use": "@vercel/static-build" },
-    { "src": "../dist/test/server/main.js", "use": "@vercel/node" }
-  ],
-  "routes": [{ "src": "/(.*)", "dest": "./dist/test/server/main.js" }]
+  "functions": {
+    "./dist/test/server/main.js": {
+      "includeFiles": ".dist/browser/.*"
+    }
+  }
 }
