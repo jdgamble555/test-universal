@@ -20,7 +20,7 @@ server.engine('html', ngExpressEngine({
 }));
 
 server.set('view engine', 'html');
-server.set('views', distFolder);
+server.set('views', distFolder); 
 
 // Example Express Rest API endpoints
 // server.get('/api/**', (req, res) => { });
