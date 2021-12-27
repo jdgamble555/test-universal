@@ -12,7 +12,7 @@ import { existsSync } from 'fs';
 //export default function app(): express.Express {
   const server = express();
   const distFolder = join(process.cwd(), 'dist/test/browser');
-  const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
+  const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index.html';
 
   console.log(distFolder);
 
