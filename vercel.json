@@ -2,7 +2,6 @@
   "version": 2,
   "public": true,
   "name": "test-universal",
-  "builds": [{ "src": "package.json", "use": "@vercel/static" }],
   "rewrites": [{ "source": "/(.*)", "destination": "/api/main.js" }],
   "functions": {
     "api/main.js": {
@@ -10,4 +9,3 @@
     }
   }
 }
- 
