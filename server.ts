@@ -19,7 +19,7 @@ server.engine('html', ngExpressEngine({
   bootstrap: AppServerModule,
 }));
 
-server.set('view engine', 'html');
+server.set('view engine', 'html'); 
 server.set('views', distFolder);
 
 // Example Express Rest API endpoints
