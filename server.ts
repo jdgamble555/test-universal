@@ -33,6 +33,7 @@ server.get('*.*', express.static(distFolder, {
 server.get('*', (req, res) => {
   res.setHeader('Content-Type', 'text/html');
   res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
+  console.log(req.baseUrl);
   res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
 });
 
