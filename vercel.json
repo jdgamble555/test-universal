@@ -4,7 +4,7 @@
   "name": "test-universal",
   "rewrites": [
     { "source": "/(.*)", "destination": "/api/main.js" },
-    { "source": "/(.*[.].+)", "destination": "dist/test/browser/$1" }
+    { "source": "/(.*[.].+)", "destination": "/browser/$1" }
   ],
   "functions": {
     "api/main.js": {
