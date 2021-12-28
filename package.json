@@ -5,14 +5,14 @@
     "ng": "ng",
     "start": "ng serve",
     "build-old": "ng build && ng run test:server",
-    "build": "ng build --output-path=browser",
+    "build": "",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run test:serve-ssr",
     "serve:ssr": "node dist/test/server/main.js",
     "build:ssr": "ng build && ng run test:server",
     "prerender": "ng run test:prerender",
-    "vercel-build": "ng run test:server --output-path=server"
+    "vercel-build": "ng build --output-path=browser && ng run test:server --output-path=server"
   },
   "private": true,
   "dependencies": {
