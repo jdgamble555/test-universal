@@ -3,7 +3,7 @@
   "public": true,
   "name": "test-universal",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/api/index.js" },
+    { "source": "/(.*)", "destination": "/api" },
     { "source": "/(.*[.].+)", "destination": "/browser/$1" }
   ],
   "functions": {
