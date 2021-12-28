@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build-old": "ng build && ng run test:server",
-    "build": "ng build --output-path=browser && ng run test:server --output-path=server",
+    "build": "ng build --output-path=t/browser && ng run test:server --output-path=t/server",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run test:serve-ssr",
