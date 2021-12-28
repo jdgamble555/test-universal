@@ -7,7 +7,7 @@
     { "source": "/(.*[.].+)", "destination": "/browser/$1" }
   ],
   "functions": {
-    "api/main.js": {
+    "api/index.js": {
       "includeFiles": "/browser/index.html"
     }
   }
