@@ -8,7 +8,8 @@
   ],
   "functions": {
     "api/index.js": {
-      "includeFiles": "/var/task/api/browser/index.html"
+      "includeFiles": "browser/index.html",
+      "runtime": "@vercel/node@1.8.5"
     }
   }
 }
