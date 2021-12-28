@@ -8,7 +8,7 @@
   ],
   "functions": {
     "api/index.js": {
-      "includeFiles": "dist/test/browser/index.html"
+      "includeFiles": "dist/test/browser/**"
     }
   }
 }
