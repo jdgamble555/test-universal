@@ -12,7 +12,7 @@
     "serve:ssr": "node dist/test/server/main.js",
     "build:ssr": "ng build && ng run test:server",
     "prerender": "ng run test:prerender",
-    "vercel-build": "ng build --output-path=browser && ng run test:server --output-path=server"
+    "vercel-build": "ng build && ng run test:server --output-path=server"
   },
   "private": true,
   "dependencies": {
