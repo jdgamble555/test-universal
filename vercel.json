@@ -5,10 +5,5 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/api/index.js" },
     { "source": "/(.*[.].+)", "destination": "/browser/$1" }
-  ],
-  "functions": {
-    "api/index.js": {
-      "includeFiles": "browser/index.html"
-    }
-  }
+  ]
 }
